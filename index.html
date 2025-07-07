@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Day 1 - Workout Tracker</h1>
+    <table id="workoutTable">
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets/Reps</th>
+          <th>Description</th>
+          <th>Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Banded Shoulder Press</td>
+          <td><select class="sets-reps">
+            <option value="4 sets of 20 reps">4 sets of 20 reps</option>
+            <option value="4 sets of 25 reps">4 sets of 25 reps</option>
+            <option value="4 sets of 30 reps">4 sets of 30 reps</option>
+          </select></td>
+          <td>Press the resistance band overhead, keeping your elbows slightly bent at the top. Engage your core and push the band straight up.</td>
+          <td><input type="checkbox" class="completed"></td>
+        </tr>
+        <tr>
+          <td>Banded Rows</td>
+          <td><select class="sets-reps">
+            <option value="4 sets of 20 reps">4 sets of 20 reps</option>
+            <option value="4 sets of 25 reps">4 sets of 25 reps</option>
+            <option value="4 sets of 30 reps">4 sets of 30 reps</option>
+          </select></td>
+          <td>Attach the band to a door or anchor, and row it towards your torso, squeezing your shoulder blades together as you pull the band.</td>
+          <td><input type="checkbox" class="completed"></td>
+        </tr>
+        <!-- Add more exercises here -->
+      </tbody>
+    </table>
+    <button onclick="trackProgress()">Track Progress</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
